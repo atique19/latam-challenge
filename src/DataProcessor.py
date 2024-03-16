@@ -1,4 +1,6 @@
-
+"""
+Clase encargada de contener metodos para la ejecucion de cada una de los requerimientos.
+"""
 import json ,emoji 
 from datetime import datetime
 from collections import Counter
