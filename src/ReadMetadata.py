@@ -3,7 +3,12 @@ Descripccion Funcion:
 
 El obejtivo de la función esta en permitir cargar de manera segura variables almacenadas en un archivo YAML, 
 facilitando su uso posterior en las funciones que se requieran posteriomente.
+
+Parametros:
+
+    -RutaArchivoVariablesProceso: Type STR
 """
+
 
 import yaml
 

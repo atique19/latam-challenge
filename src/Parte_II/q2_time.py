@@ -3,8 +3,8 @@ Funcion basada en la libreria cprofile. Cuyo objetivo es evidenciar el timepo en
 de todas la llamadas de la funcion que se requiere ejecutar y medir.
 
 PARAMETROS IN:
-file_path : Ruta archivo JSON - type STR
-primary_key : Nombre de la llave requeria donde estan almacenados los tweets - type STR
+    file_path : Ruta archivo JSON - type STR
+    primary_key : Nombre de la llave requeria donde estan almacenados los tweets - type STR
 """
 
 from typing import List, Tuple

@@ -8,9 +8,9 @@ Funcion basada en la libreria memory_profiler==0.61.0. Cuyo objetico es evidenci
 (Memoria) para la funcion principal destinada al procesamiento de los datos.
 
 PARAMETROS IN:
-file_path  : Ruta archivo JSON - type STR
-query      : Query del proceso - type STR
-table_name : Nombre tabla tmp  - type STR
+    file_path  : Ruta archivo JSON - type STR
+    query      : Query del proceso - type STR
+    table_name : Nombre tabla tmp  - type STR
 """
 
 @profile

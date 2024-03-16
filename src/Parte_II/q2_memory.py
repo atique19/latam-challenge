@@ -1,3 +1,13 @@
+
+"""
+Funcion basada en la libreria memory_profiler==0.61.0. Cuyo objetico es evidenciar el consumo en recursos  
+(Memoria) para la funcion principal destinada al procesamiento de los datos.
+
+PARAMETROS IN:
+    file_path : Ruta archivo JSON - type STR
+    primary_key : Nombre de la llave requeria donde estan almacenados los tweets - type STR
+"""
+
 from typing import List, Tuple
 from typing import List, Tuple
 from datetime import datetime
@@ -5,14 +15,6 @@ from memory_profiler import profile, memory_usage
 from DataProcessor import DataProcessor
 
 
-"""
-Funcion basada en la libreria memory_profiler==0.61.0. Cuyo objetico es evidenciar el consumo en recursos  
-(Memoria) para la funcion principal destinada al procesamiento de los datos.
-
-PARAMETROS IN:
-file_path : Ruta archivo JSON - type STR
-primary_key : Nombre de la llave requeria donde estan almacenados los tweets - type STR
-"""
 
 @profile
 def q2_memory(file_path: str, primary_key: str) -> List[Tuple[datetime.date, str]]:
