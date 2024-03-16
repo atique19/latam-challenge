@@ -1,6 +1,6 @@
 ##Archivo de almacenamiento de variables del proceso
 
-RutaArchivo: farmers-protest-tweets-2021-2-4.json
+RutaArchivo: Data_twitter\farmers-protest-tweets-2021-2-4.json
 
 Parte1:
   Query: "SELECT  TO_DATE(CAST(date AS TIMESTAMP)) AS FECHA_PUBLICACION, user.username AS USUARIO
