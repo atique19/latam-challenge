@@ -3,10 +3,10 @@
 from time import time
 from typing import List, Tuple
 from datetime import datetime
-from packages.DataProcessor import DataProcessor
-# from memory_profiler import profile, memory_usage
+from packages.data_processor import DataProcessor
+from memory_profiler import profile
 
-# @profile
+@profile
 def q2_time(data_procesor: DataProcessor) -> List[Tuple[datetime.date, str]]:
     """
     Procesa los datos del archivo especificado utilizando el metodo 
