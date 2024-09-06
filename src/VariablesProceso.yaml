@@ -1,0 +1,7 @@
+##Archivo de almacenamiento de variables del proceso
+
+RutaArchivo: Data_twitter\farmers-protest-tweets-2021-2-4.json
+
+Parte3:
+   LlavePrimaria: mentionedUsers
+   LlaveSecundaria: username
