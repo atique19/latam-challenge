@@ -2,9 +2,7 @@ from time import time
 from typing import List, Tuple
 from datetime import datetime
 from packages.DataProcessor import DataProcessor
-from memory_profiler import profile, memory_usage
-
-
+from memory_profiler import profile
 
 @profile
 def q3_memory(data_procesor: DataProcessor) -> List[Tuple[datetime.date, str]]:
