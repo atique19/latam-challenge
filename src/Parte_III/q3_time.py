@@ -1,19 +1,27 @@
-"""
-Funcion basada en la libreria cprofile. Cuyo objetivo es evidenciar el timepo en ejecucion 
-de todas la llamadas de la funcion que se requiere ejecutar y medir.
 
-PARAMETROS IN:
-    file_path : Ruta archivo JSON - type STR
-    primary_key : Llave primaria del Json - type STR
-    second_key : Llave secundaria del Json - type STR
-"""
 
-import cProfile
+from time import time
 from typing import List, Tuple
 from datetime import datetime
 from packages.DataProcessor import DataProcessor
+from memory_profiler import profile, memory_usage
 
+@profile
+def q3_time(data_procesor: DataProcessor) -> List[Tuple[datetime.date, str]]:
+    """
+    Procesa los datos del archivo especificado utilizando el metodo 
+    (read_data_part3_time) de la clase (DataProcessor).
 
-def q3_time(file_path: str, primary_key: str, second_key: str) -> List[Tuple[datetime.date, str]]:
-    
-    cProfile.runctx('DataProcessor.read_data_part3(file_path, primary_key, second_key)', globals(), locals(),filename=None, sort="cumtime")
+    Args:
+        ruta_archivo (str): Ruta al archivo JSON que contiene los datos a procesar.
+
+    Returns:
+        List[Tuple[datetime.date, str]]: Una lista de tuplas.
+
+    """
+
+    tiempo_inicial = time()  # Registrar el tiempo inicial antes de procesar los datos
+    resultado = data_procesor.read_data_part3_time() # Llamar al metodo para procesar los datos
+    data_procesor.determinate_duration(tiempo_inicial) # Medir y mostrar el tiempo de procesamiento
+ 
+    return resultado
