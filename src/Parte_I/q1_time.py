@@ -3,7 +3,7 @@
 from time import time
 from datetime import datetime
 from typing import List, Tuple
-from packages.DataProcessor import DataProcessor
+from packages.data_processor import DataProcessor
 from memory_profiler import profile
 
 @profile
